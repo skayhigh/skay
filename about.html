@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay Schmid</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    
+    <header>
+        <div id="brand"><a href="/">.KaySchmid</a></div>
+        <nav>
+          <ul>
+            <li><a href="./showreel.html">.showreel</a></li>
+            <li><a href="./contacts.html">.contacts</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="./showreel">.showreel</a></li>
+              <li><a href="./contacts">.contacts</a></li>
+              
+            </ul>
+          </div>
+          
+     </header>
+     <main>
+      <div id='container'>
+        <canvas id="canvas3d"></canvas>
+      </div>
+    </main>
+<script src="index.js"></script>
+<script type="module">
+import { Application } from './runtime3.js';
+const app = new Application();
+app.load('./scene3.json');
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+</script>
+</body>
+</html>

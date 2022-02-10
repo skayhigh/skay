@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay Schmid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
+</head>
+<body>
+    
+    <header>
+        <div id="brand"><a href="/">.KaySchmid</a></div>
+        <nav>
+          <ul>
+            <li><a href="./about.html">.about</a></li>
+            <li><a href="./showreel.html">.showreel</a></li>
+            <li><a href="./contacts.html">.contacts</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="./about.html">.about</a></li>
+              <li><a href="./showreel.html">.showreel</a></li>
+              <li><a href="./contacts.html">.contacts</a></li>
+              
+            </ul>
+          </div>
+          </header>
+          <p>.3D Artist/Web Design<br>mail@skayhigh.art</p>
+          <main>
+              <div id='container'>
+              <canvas id="canvas3d"></canvas></div>
+          </main>
+          <footer>
+            <ul>
+              <li><a href="https://twitter.com/skayhigh1" id="socials" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li><a href="https://instagram.com/skayhigh_" id="socials1" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="https://github.com/skayhigh" id="socials2" target="_blank">
+                <ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+            <p2 id="bottom">4 years design experience.<br>Get in touch for availability.</p2>   
+          </footer>
+     
+     
+     
+     
+          <script src="index.js"></script>
+     <script type="module">
+      import { Application } from './runtime3.js';
+      const app = new Application();
+      app.load('./scene3.json');
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
